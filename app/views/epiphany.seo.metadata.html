@@ -50,9 +50,6 @@
                     </p>
                 </div>
 
-
-
-
                 <span class="help-inline" val-msg-for="description" val-toggle-msg="maxlen">Page description is too long</span>
             </div>
         </div>
@@ -75,6 +72,30 @@
 
     <div class="row-fluid">
         <div class="span12">
+            <!-- keywords -->
+            <label class="control-label" for="keywords">
+                Meta Keywords
+            </label>
+            <div class="controls controls-row">
+                <textarea name="keywords" ng-model="model.value.keywords" maxlen placeholder="Target Keywords for Page"></textarea>
+                <span class="title-length">
+                    {{model.value.keywords.length}}
+                </span>
+                
+                <div class="help-block">
+                    <p>
+                        <strong>Meta Keywords</strong> are used by SOME search engines for determine the category of content and if the content is relevant to user's search.
+                    </p>
+                    <p>
+                        Make sure that keywords you entered here can be found in your content. If no, the search engine will think that you are cheating them.
+                    </p>
+                    <p>
+                        More Information: <a href="https://moz.com/learn/seo/what-are-keywords" target="_blank">What are Keywords? (Moz.com)</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- URL Name -->
             <label class="control-label" for="urlName">URL Name</label>
             <div class="controls controls-row">
                 <input type="text" class="input-xlarge" ng-model="model.value.urlName" />
