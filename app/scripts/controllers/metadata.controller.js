@@ -12,7 +12,7 @@ angular.module("umbraco")
 
             // default model.value
             if (!$scope.model.value) {
-                $scope.model.value = { title: '', description: '', keywords='', urlName: '', noIndex: false };
+                $scope.model.value = { title: '', description: '', keywords: '', urlName: '', noIndex: false };
             }
 
             // a very basic slugify function to replace chars in url
