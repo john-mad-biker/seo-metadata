@@ -2,8 +2,26 @@ $bp: 1500px;
 
 .seo-metadata-container {
 
-    input[name=title] {
-        width: 90%;
+    .span6 {
+        input[type="text"] {
+            width: 90%;
+        }
+
+        textarea {
+            width: 90%;
+            height: 97px;
+        }
+    }
+
+    .span12 {
+        input[type="text"] {
+            width: 50%;
+        }
+
+        textarea {
+            width: 50%;
+            height: 50px;
+        }
     }
 
     label {
@@ -31,11 +49,6 @@ $bp: 1500px;
     .error {
         color: rgb(185, 74, 72);
     }    
-
-    textarea {
-        width: 90%;
-        height: 97px;
-    }
 
     .controls-col {
         @media (max-width: $bp) {
